@@ -1,3 +1,12 @@
+# Kim_DeMorias-Midterm
+
+## Branches
+* des.hrk.artwork
+* dev.hrk.development
+
+## README
+**Kim Hyeryn**
+
 # TRAA Website Artwork
 **Kim Hyeryn**
 
