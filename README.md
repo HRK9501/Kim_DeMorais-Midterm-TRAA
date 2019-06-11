@@ -20,3 +20,14 @@ Users can also get more information and move to the contact page using the butto
 
 ## Images
 I separated the images by category and naming it.
+
+# TRAA Website Development
+**Kim Hyeryn**
+
+## Javascript
+I used js to make a slide carousel.
+I included the function that is required to rotate three photos in the carousel.
+
+* Arrow buttons that users can rotate the three different photos
+* Three dots that let users know how many photos on the carousel  
+
