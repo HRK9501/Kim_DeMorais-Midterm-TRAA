@@ -1,0 +1,705 @@
+body { 
+    font-family: 'Nanum Gothic', sans-serif; 
+    margin: 0;
+}
+a:link, a:visited { 
+    text-decoration:none; 
+}
+
+.hidden {
+	display: none;
+}
+
+
+/* Header */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: #424242 0.3px solid;
+}
+
+.mainheader {
+    width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.logo {
+    margin: 20px auto 20px 100px;
+}
+
+.menu{
+    margin: auto 100px auto 0 ;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {  
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+    padding-left: 56px;
+}
+
+.menu-item:first-child {
+    padding: 0;
+} 
+
+.menu li a {
+    color: #424242;
+    font-weight: 800;
+}
+
+.menu li a:hover {
+    background-color: #9abd4b;
+    color: white;
+}
+
+/* carousel */
+
+.carousel-container {
+  max-width: 1200px;
+  position: relative;
+}
+
+.bannerdesign {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  transition: 0.2s ;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #424242;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #dadada;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #424242;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
+
+/* About TRAA */
+
+#about-us {
+    margin: 50px 100px 0 100px;
+}
+
+#about-us-text {
+    margin: 0 0 50px 0;
+}
+
+#about-us h2 {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #424242;
+    margin: 0 0 40px 0;
+}
+
+#about-us h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#traa-works {
+    width: 1000px;
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 330px;
+    height: 260px;
+    text-align: center;
+}
+
+.icon img {
+    margin: 20px auto 15px auto;
+}
+
+.icon-text {
+    width: 310px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+
+.traa-works p {
+    width: 300px;
+    height: 116px;
+    line-height: 22px;
+    font-size: 15px;
+    margin: 30px 10px 0 10px;
+    text-align: center;
+}
+
+
+
+/* more about TRAA */
+
+#more-about {
+    margin: 50px 100px 0 100px;
+}
+
+#more-about-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#more-about-text {
+    margin: 50px 0 80px 0;
+}
+
+#more-about-text p {
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+}
+ 
+
+
+/* project */
+
+#project-container {
+    padding: 80px 0 0 0;
+    margin: 0 100px 0 100px;
+	border-top: #424242 1px solid;
+}
+
+#project-title h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #424242;
+}
+
+
+#project-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+}
+
+#project-title p {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0px;
+}
+
+#project-box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#project {
+    width: 450px;
+}
+
+.project-img {
+    margin: 55px 0 0;
+}
+
+#project-text {
+    width: 450px;
+    height: 380px;
+    border-bottom: #525252 1px solid;
+}
+
+#project-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 20px 0 40px 0;
+    color: black;
+}
+
+#project-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#project-text p {
+    margin: 0 0 50px 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#readmorebutton {
+    width: 450px;
+    text-align: center;
+}
+
+#project button {
+    margin: 25px 0 0 0;
+}
+
+.read-more-button {
+    background-color: #9abd4b;
+    color: white;
+    font-size: 20px;
+    padding: 13px 15px;
+    text-decoration: none;
+    border-radius: 50px; 
+    border: none;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    color: #9abd4b;
+    background-color: #424242;
+}
+
+
+
+/* project Archives */
+#project-archives-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#archives {
+    width: 450px;
+}
+
+#archives-title h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #424242;
+    margin: 80px 0 50px 0;
+}
+
+.archives-img {
+    margin: 0;
+}
+
+#archives-text {
+    width: 450px;
+    height: 80px;
+    margin: 20px 0 0 0;
+    border-bottom: #424242 1px solid;
+}
+
+#archives-text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+}
+
+#archives button {
+    margin: 25px 0 0 0;
+}
+
+
+/* footer */
+
+#footer {
+    width: 1200px;
+    height: 185px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 120px 0 0 0;
+    background-color: #dadada;
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 auto 100px;
+}
+
+#footer-img {
+    margin: auto 0;
+}
+
+#footer-text {
+    margin: 40px 0 40px 30px;
+}
+
+.footer-traa {
+    font-size: 15px;
+    margin: 0;
+}
+
+.footer-address {
+    font-size: 15px;
+    margin: 12px 0 50px 0;
+}
+.copyright {
+    font-size: 15px;
+    margin: 0;
+}
+
+#footer-right {
+    margin: auto 100px auto 0;
+}
+
+#footer-right img {
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* home main */
+
+#borderline {
+    width: 1000px;
+    margin: 0 100px 80px 100px;
+    border-bottom: #424242 1px solid;
+}
+
+#homemain-container {
+    margin: 95px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#homemain-container2 {
+    margin: 95px 0 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#homemain {
+    width: 450px;
+}
+
+.homemain-img {
+    margin: 0;
+}
+
+#homemain-text {
+    width: 450px;
+    height: 380px;
+    border-bottom: #525252 1px solid;
+}
+
+#homemain-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 20px 0 40px 0;
+    color: black;
+}
+
+#homemain-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#homemain-text p {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#homemainbutton {
+    width: 450px;
+    text-align: center;
+}
+
+#homemain button {
+    margin: 25px 0 0 0;
+}
+
+.contact-button {
+    background-color: #9abd4b;
+    color: white;
+    font-size: 20px;
+    padding: 13px 15px;
+    text-decoration: none;
+    border-radius: 50px; 
+    border: none;
+    cursor: pointer;
+}
+
+.click-button {
+    background-color: #9abd4b;
+    color: white;
+    font-size: 20px;
+    padding: 13px 15px;
+    text-decoration: none;
+    border-radius: 50px; 
+    border: none;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    color: #9abd4b;
+    background-color: #424242;
+}
+
+.click-button:hover {
+    color: #9abd4b;
+    background-color: #424242;
+}
+
+
+/* partners */
+
+#partners-container h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #424242;
+    margin: 80px 0 50px 100PX;
+}
+
+#TRAA-partners {
+    width: 1100px;
+    margin: 0 50px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#partners {
+    text-align: center;
+}
+
+#partners p {
+    font-size: 15px;
+    margin: 25px 0 80px 0;
+}
+
+/* people-list */
+
+#people-container {
+    width: 1000px;
+    margin: 0 100px 120px 100px;
+    border-top: #525252 1px solid;
+}
+
+#people-container h2 {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 80px 0 50px 0;
+    color: #424242; 
+}
+
+#executives {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+#Volunteer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;     
+}
+
+#executives-list {
+    text-align: center;
+}
+
+#Volunteer-list {
+    text-align: center;
+}
+
+.position {
+    font-size: 17px;
+    margin: 0 0 60px 0;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+
+
+#mail-container {
+    margin: 50px 100px 0 100px;
+}
+
+#mail-container h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #424242;
+    margin: 0 0 40px 0;
+}
+
+.mail-location {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+}
+
+.mail-note {
+    font-size: 15px;
+}
+
+#meetin-container {
+    margin: 80px 100px 0 100px;
+}
+
+#meetin-container h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #424242;
+    margin: 0 0 40px 0;
+}
+
+.meeting-text {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    line-height: 22px;
+}
+
+.meeting-location {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+}
+
+.meeting-note {
+    font-size: 15px;
+    line-height: 22px;  
+}
+
+#contact-info-container {
+    width: 1000px;
+    margin: 80px 100px 80px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#form-title {
+    margin: 0 0 40px 0; 
+}
+
+
+#form-title h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+input[type=text] {
+    width: 450px;
+    height: 50px;
+    background-color: #dadada;
+    font-size: 20px;
+    color: #424242;
+    border: none;
+    margin: 19px 0 0 0;
+    padding: 0;
+}
+
+input[type=text2] {
+    width: 450px;
+    height: 200px;
+    background-color: #dadada;
+    font-size: 20px;
+    color: #424242;
+    border: none;
+    margin: 19px 0 0 0;
+    padding: 0;
+}
+
+#submit {
+    background-color: #9abd4b;
+    color: white;
+    font-size: 20px;
+    padding: 13px 20px;
+    text-decoration: none;
+    border-radius: 50px; 
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #9abd4b;
+    background-color: #424242;  
+}
+
+#map-container {
+    width: 450px;
+}
+
+#map-text {
+    margin: 0 0 90px 0;
+}
+
+#map-text p {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+}
